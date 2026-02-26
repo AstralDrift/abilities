@@ -146,7 +146,7 @@ Examples:
                 return self._fallback_response(original_input)
 
         except Exception:
-            return f"I had trouble with that calculation. Could you try rephrasing?"
+            return "I had trouble with that calculation. Could you try rephrasing?"
 
     def _do_calculation(self, parsed: dict, original_input: str) -> str:
         """Perform basic arithmetic calculation."""
@@ -228,7 +228,7 @@ Examples:
             result = (value * 9 / 5) + 32
             return f"{value} degrees Celsius is {result:.1f} degrees Fahrenheit."
 
-        return f"I can convert between miles and kilometers, feet and meters, pounds and kilograms, and Fahrenheit and Celsius."
+        return "I can convert between miles and kilometers, feet and meters, pounds and kilograms, and Fahrenheit and Celsius."
 
     def _do_equation(self, parsed: dict) -> str:
         """Solve simple linear equations."""
